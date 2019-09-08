@@ -4,7 +4,7 @@
 CREATE TABLE `rule` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '规则主键 id，自增',
   `name` varchar(100) NOT NULL DEFAULT '' COMMENT '规则名称',
-  `default_value` text COMMENT '命中规则时返回值',
+  `default_value` text COMMENT '未命中规则时返回值',
   `flag` tinyint(11) NOT NULL DEFAULT '0' COMMENT '是否有效: 0有效 1无效',
   `comment` varchar(500) DEFAULT NULL COMMENT '备注',
   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',

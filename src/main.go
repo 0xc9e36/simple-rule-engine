@@ -31,7 +31,6 @@ func main()  {
 
 		//这里还可以有其他规则因子...
 	}
-
 	val, matched := rule.MatchRule("score_level", factors...)
 	fmt.Println(matched, "分数 59, 等级:", val)
 }
